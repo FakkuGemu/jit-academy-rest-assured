@@ -1,0 +1,74 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    },
+    {
+      "id": null,
+      "title": "TestTitle",
+      "views": 200
+    },
+    {
+      "id": "848d",
+      "title": "TestTitle",
+      "views": 200
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "ff13",
+      "text": "Kto slucha w 2025?",
+      "postId": "420"
+    },
+    {
+      "id": "6569",
+      "text": "Kto slucha w 2025?",
+      "postId": "420"
+    },
+    {
+      "id": "33ef",
+      "text": "Kto slucha w 2025?",
+      "postId": "420"
+    },
+    {
+      "id": "8a59",
+      "text": "Kto slucha w 2025?",
+      "postId": "420"
+    },
+    {
+      "id": "179f",
+      "text": "Kto slucha w 2025?",
+      "postId": "420"
+    },
+    {
+      "id": "f5f3",
+      "text": "Kto slucha w 2025?",
+      "postId": "420"
+    },
+    {
+      "id": "43b3",
+      "text": "Kto slucha w 2420?",
+      "postId": "242"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

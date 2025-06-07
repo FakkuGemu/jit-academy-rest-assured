@@ -43,12 +43,7 @@ public class UserTest {
     @ParameterizedTest()
     @MethodSource("userListData")
     public void getUserListTest(Integer pageId, Integer perPage, Integer total, Integer total_pages, Integer userId, String email, String firstName, String lastName, String avatar){
-        given().
-                spec(requestSpec).
-                queryParam("page",pageId).
-                when().
-
-                get().
+                RestService.getUserService().getUserList(pageId).
                 then().
 
                 body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/userList.json")).
@@ -75,11 +70,7 @@ public class UserTest {
     @ParameterizedTest()
     @MethodSource("userData")
     public void getSingleUserTest(Integer userId, String email, String firstName, String lastName, String avatar){
-        given().
-               spec(requestSpec).
-                pathParam("userId", userId).
-                when().
-                get("/{userId}").
+            RestService.getUserService().getUser(userId).
                 then().
                 body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/singleUser.json")).
 
